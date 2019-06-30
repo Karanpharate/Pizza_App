@@ -3,7 +3,23 @@
 	margin: 0;
 }
 
-.pizzaBox {
+body {
+	background-color: #333;
+}
+
+ul {
+	list-style: none;
+}
+
+
+/* pizzalisting CSS */
+
+.pizzaListing {
+	width: 1152px;
+	margin: 0 auto;
+}
+
+.pizzaListing li {
 	padding: 10px 0 15px 0;
 	background-color: #e61a39;
 	margin: 0 10px 20px;
@@ -11,14 +27,15 @@
 	text-align: center;
 	border-radius: 10px;
 	float: left;
-	box-sizing: border-box;
-	height: 515px;
+	min-height: 515px;
 }
 
-ul {
-	list-style: none;
-	position: relative;
-	left: 175px;
+.pizzaListing li.clearList {
+	float: none;
+	clear: both;
+	width: 0;
+	height: 0;
+	min-height: 0;
 }
 
 .pizzaName {
@@ -27,7 +44,7 @@ ul {
 	font-size: 24px;
 }
 
-.pizzaPara {
+.pizzaDescription {
 	margin: 10px auto 15px auto;
 	color: #fff;
 	width: 380px;
@@ -42,6 +59,7 @@ ul {
 }
 
 .pizzaButton {
+	cursor: pointer;
 	padding: 10px 35px;
 	color: #e61a39;
 	margin: 20px 0 10px;
@@ -56,67 +74,111 @@ ul {
 	font-family: sans-serif;
 }
 
-body {
-	background-color: #333;
-}
-* {
-	padding: 0;
-	margin: 0;
-}
 
-.pizzaBox {
-	padding: 10px 0 15px 0;
-	background-color: #e61a39;
-	margin: 0 10px 20px;
-	width: 555px;
-	text-align: center;
-	border-radius: 10px;
+/*  Cart css  */
+
+.floatLeft {
 	float: left;
-	box-sizing: border-box;
-	height: 515px;
 }
 
-ul {
-	list-style: none;
-	position: relative;
-	left: 175px;
+.cursorPointer {
+	cursor: pointer;
 }
 
-.pizzaName {
-	margin: 10px 0 10px 0;
-	color: #fff;
-	font-size: 24px;
-}
-
-.pizzaPara {
-	margin: 10px auto 15px auto;
-	color: #fff;
-	width: 380px;
-	text-align: center;
-	font-size: 15px;
-}
-
-.pizzaPrice {
-	margin: 10px 0 15px 0;
-	color: #fff;
-	font-size: 18px;
-}
-
-.pizzaButton {
-	padding: 10px 35px;
-	color: #e61a39;
-	margin: 20px 0 10px;
-	font-size: 16px;
-}
-
-.pizzaHeading {
-	margin: 20px 0 10px;
-	text-align: center;
-	color: #fff;
-	font-size: 36px;
+.cart {
+	background-color: #ffffff;
+	font-size: 60px;
 	font-family: sans-serif;
+	color: #333333;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
 }
 
-body {
-	background-color: #333;
+.cart li {
+	border: 1px solid #ddd;
+}
+
+.name {
+	width: 70%;
+}
+
+.action {
+	width: 15%;
+}
+
+.price {
+	width: 15%;
+}
+
+.cart li.clearlist,
+.cart h3.clearList,
+.cart h4.clearList {
+	clear: both;
+	float: none;
+}
+
+.topping {
+	padding: 20px 15px;
+	font-size: 50px;
+	font-family: sans-serif;
+	color: #3c763d;
+	background-color: #dff0d8;
+}
+
+.toppingName {
+	margin: 5px 0;
+}
+
+.toppingPrice {
+	margin-top: 5px;
+}
+
+.button {
+	font-size: 35px;
+	background-color: #b92c28;
+	padding: 12px 12px;
+	border-radius: 4px;
+	border: 0px;
+	color: #fff;
+}
+
+.discount {
+	background-color: #095c91;
+	padding: 100px 0;
+}
+
+.discountWrap {
+	background-color: #095c91;
+	padding: 5px 5px;
+	color: #fff;
+	border: 1px solid;
+	margin: 0 50px 0 100px;
+	font-size: 40px;
+}
+
+.discountButton {
+	color: #fff;
+	font-size: 40px;
+	background-color: #28a4c9;
+	border-radius: 4px;
+	border: 0px;
+	padding: 12px 12px;
+	margin-right: 50px;
+}
+
+.total {
+	color: #fff;
+	font-size: 30px;
+	font-family: sans-serif;
+	margin-right: 10%;
+}
+
+.orderFinal {
+	color: #e61a39;
+	display: block;
+	font-size: 50px;
+	padding: 12px 48px;
+	border-radius: 4px;
+	width: 620px;
+	margin: 100px auto 0;
 }

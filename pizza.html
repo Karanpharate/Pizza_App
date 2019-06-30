@@ -1,66 +1,92 @@
-<html>
-   <head>
-      <link href="./css/style.css" type="text/css" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-      <h1 class="pizzaHeading">PIZZA ORDER APP</h1>
-   </head>
-   <title>React App</title>
-   <body>
-      <div>
-         <ul>
-            <li class="pizzaBox" >
-               <img class="pizzaImage" src="./images/Margherit.jpg" >
-               <h3 class="pizzaName ">Margherita</h3>
-               <p class="pizzaPara">A hugely popular margherita,
-                  with a deliciously tangy single cheese topping
-               </p>
-               <h4 class="pizzaPrice">Price::400 RS(10% off on MRP)</h4>
-               <input type="button" class="pizzaButton" value="ADD TO CART"></input>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="./css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <title>React App</title>
+    </head>
+    <body>
+        <!-- pizzaListing hTML -->
+        <h1 class="pizzaHeading">PIZZA ORDER APP</h1>
+        <ul class="pizzaListing">
+            <li>
+                <img class="pizzaImage" src="./images/Margherit.jpg" alt="Margherita" />
+                <h3 class="pizzaName">Margherita</h3>
+                <p class="pizzaDescription">A hugely popular margherita,
+                    with a deliciously tangy single cheese topping
+                </p>
+                <h4 class="pizzaPrice">Price::400 RS(10% off on MRP)</h4>
+                <button type="submit" class="pizzaButton">ADD TO CART</button>
             </li>
-            <li class="pizzaBox" >
-               <img class="pizzaImage" src="./images/Farmhouse.jpg" >
-               <h3 class="pizzaName ">Double Cheese Margherita</h3>
-               <p class="pizzaPara">The ever-popular Margherita - loaded with extra cheese... oodies of it!</p>
-               <h4 class="pizzaPrice">Price::100 RS(20% off on MRP)</h4>
-               <input type="button" class="pizzaButton" value="ADD TO CART"></input>
+            <li>
+                <img class="pizzaImage" src="./images/Farmhouse.jpg" alt="Margherita" />
+                <h3 class="pizzaName ">Double Cheese Margherita</h3>
+                <p class="pizzaDescription">The ever-popular Margherita - loaded with extra cheese... oodies of it!</p>
+                <h4 class="pizzaPrice">Price::100 RS(20% off on MRP)</h4>
+                <button type="submit" class="pizzaButton">ADD TO CART</button>
             </li>
-            <li class="pizzaBox" >
-               <img class="pizzaImage" src="./images/Chicken_Golden_Delight.jpg" >
-               <h3 class="pizzaName ">Chicken Golden Delight</h3>
-               <p class="pizzaPara">Mmm! Barbeque chicken with a topping of golden corn loaded with extra cheese.
-                  Worth its weight in gold!
-               </p>
-               <h4 class="pizzaPrice">Price::300 RS(10% off on MRP)</h4>
-               <input type="button" class="pizzaButton" value="ADD TO CART"></input>
+            <li>
+                <img class="pizzaImage" src="./images/Chicken_Golden_Delight.jpg" alt="Chicken Golden Delight" />
+                <h3 class="pizzaName ">Chicken Golden Delight</h3>
+                <p class="pizzaDescription">Mmm! Barbeque chicken with a topping of golden corn loaded with extra cheese.
+                    Worth its weight in gold!
+                </p>
+                <h4 class="pizzaPrice">Price::300 RS(10% off on MRP)</h4>
+                <button type="submit" class="pizzaButton">ADD TO CART</button>
             </li>
-            <li class="pizzaBox" >
-               <img class="pizzaImage" src="./images/Non-Veg_Supreme.jpg" >
-               <h3 class="pizzaName ">Non Veg Supreme</h3>
-               <p class="pizzaPara">Bite into supreme delight of Black Olives, Onions,
-                  Grilled Mushrooms, Pepper BBQ Chicken, Peri-Peri Chicken, Grilled Chicken Rashers
-               </p>
-               <h4 class="pizzaPrice">Price::150 RS(10% off on MRP)</h4>
-               <input type="button" class="pizzaButton" value="ADD TO CART"></input>
+            <li>
+                <img class="pizzaImage" src="./images/Non-Veg_Supreme.jpg" alt="Non Veg Supreme" />
+                <h3 class="pizzaName ">Non Veg Supreme</h3>
+                <p class="pizzaDescription">Bite into supreme delight of Black Olives, Onions,
+                    Grilled Mushrooms, Pepper BBQ Chicken, Peri-Peri Chicken, Grilled Chicken Rashers
+                </p>
+                <h4 class="pizzaPrice">Price::150 RS(10% off on MRP)</h4>
+                <button type="submit" class="pizzaButton">ADD TO CART</button>
             </li>
-            <li class="pizzaBox" >
-               <img class="pizzaImage" src="./images/Dominator.jpg" >
-               <h3 class="pizzaName ">Chicken Dominator</h3>
-               <p class="pizzaPara">Treat your taste buds with Double Pepper Barbecue Chicken, Peri-Peri Chicken,
-                  Chicken Tikka &amp; Grilled Chicken Rashers
-               </p>
-               <h4 class="pizzaPrice">Price::180 RS(10% off on MRP)</h4>
-               <input type="button" class="pizzaButton" value="ADD TO CART"></input>
+            <li>
+                <img class="pizzaImage" src="./images/Dominator.jpg" alt="Chicken Dominator" />
+                <h3 class="pizzaName ">Chicken Dominator</h3>
+                <p class="pizzaDescription">Treat your taste buds with Double Pepper Barbecue Chicken, Peri-Peri Chicken,
+                    Chicken Tikka &amp; Grilled Chicken Rashers
+                </p>
+                <h4 class="pizzaPrice">Price::180 RS(10% off on MRP)</h4>
+                <button type="submit" class="pizzaButton">ADD TO CART</button>
             </li>
-            <li class="pizzaBox" >
-               <img class="pizzaImage" src="./images/Chicken_Fiesta.jpg" >
-               <h3 class="pizzaName ">Chicken Fiesta</h3>
-               <p class="pizzaPara">Dominos introduces 'Chicken Fiesta' an exotic new Pizza.
-                  Topped with Chunky Chicken, Capsicum &amp; Onions.
-               </p>
-               <h4 class="pizzaPrice">Price::400 RS(10% off on MRP)</h4>
-               <input type="button" class="pizzaButton" value="ADD TO CART"></input>
+            <li>
+                <img class="pizzaImage" src="./images/Chicken_Fiesta.jpg" alt="Chicken Fiesta" />
+                <h3 class="pizzaName ">Chicken Fiesta</h3>
+                <p class="pizzaDescription">Dominos introduces 'Chicken Fiesta' an exotic new Pizza.
+                    Topped with Chunky Chicken, Capsicum &amp; Onions.
+                </p>
+                <h4 class="pizzaPrice">Price::400 RS(10% off on MRP)</h4>
+                <button type="submit" class="pizzaButton">ADD TO CART</button>
             </li>
-         </ul>
-      </div>
-   </body>
+            <li class="clearList"></li>
+        </ul>
+        <div>
+            <ul class="cart">
+                <li>
+                    <h3 class= "name floatLeft">Name</h3>
+                    <h3 class= "price floatLeft">Price</h3>
+                    <h3 class= "action floatLeft">Action</h3>
+                    <h3 class="clearList"></h3>
+                </li>
+                <li class="topping">
+                    <h4 class="name toppingName floatLeft">1)Margherita</h4>
+                    <h4 class="price toppingPrice floatLeft">360RS</h4>
+                    <button class="action button cursorPointer floatLeft" type="button">X</button>
+                    <h3 class="clearList"></h3>
+                </li>
+                <li class="clearList"></li>
+            </ul>
+        </div>
+        <div class="discount">
+            <div>
+                <input class="discountWrap" type="text" value="Enter code">
+                <button class="discountButton cursorPointer" type="submit">APPLY COUPON</button>
+                <span class="total">TOTAL => 360 RS</span>
+            </div>
+            <button class="orderFinal cursorPointer" type="button">PLACE YOUR ORDER</button>
+        </div>
+    </body>
 </html>
