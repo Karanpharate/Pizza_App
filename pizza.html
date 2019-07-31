@@ -16,14 +16,14 @@
                     with a deliciously tangy single cheese topping
                 </p>
                 <h4 class="pizzaPrice">Price::400 RS(10% off on MRP)</h4>
-                <button type="submit" class="pizzaButton">ADD TO CART</button>
+                <button onclick="toggleCart(this, 'block')" type="submit" class="pizzaButton">ADD TO CART</button>
             </li>
             <li>
                 <img class="pizzaImage" src="./images/Farmhouse.jpg" alt="Margherita" />
                 <h3 class="pizzaName ">Double Cheese Margherita</h3>
                 <p class="pizzaDescription">The ever-popular Margherita - loaded with extra cheese... oodies of it!</p>
                 <h4 class="pizzaPrice">Price::100 RS(20% off on MRP)</h4>
-                <button type="submit" class="pizzaButton">ADD TO CART</button>
+                <button onclick="toggleCart(this, 'block')" type="submit" class="pizzaButton">ADD TO CART</button>
             </li>
             <li>
                 <img class="pizzaImage" src="./images/Chicken_Golden_Delight.jpg" alt="Chicken Golden Delight" />
@@ -32,7 +32,7 @@
                     Worth its weight in gold!
                 </p>
                 <h4 class="pizzaPrice">Price::300 RS(10% off on MRP)</h4>
-                <button type="submit" class="pizzaButton">ADD TO CART</button>
+                <button onclick="toggleCart(this, 'block')" type="submit" class="pizzaButton">ADD TO CART</button>
             </li>
             <li>
                 <img class="pizzaImage" src="./images/Non-Veg_Supreme.jpg" alt="Non Veg Supreme" />
@@ -41,7 +41,7 @@
                     Grilled Mushrooms, Pepper BBQ Chicken, Peri-Peri Chicken, Grilled Chicken Rashers
                 </p>
                 <h4 class="pizzaPrice">Price::150 RS(10% off on MRP)</h4>
-                <button type="submit" class="pizzaButton">ADD TO CART</button>
+                <button onclick="toggleCart(this, 'block')" type="submit" class="pizzaButton">ADD TO CART</button>
             </li>
             <li>
                 <img class="pizzaImage" src="./images/Dominator.jpg" alt="Chicken Dominator" />
@@ -50,7 +50,7 @@
                     Chicken Tikka &amp; Grilled Chicken Rashers
                 </p>
                 <h4 class="pizzaPrice">Price::180 RS(10% off on MRP)</h4>
-                <button type="submit" class="pizzaButton">ADD TO CART</button>
+                <button onclick="toggleCart(this, 'block')" type="submit" class="pizzaButton">ADD TO CART</button>
             </li>
             <li>
                 <img class="pizzaImage" src="./images/Chicken_Fiesta.jpg" alt="Chicken Fiesta" />
@@ -59,11 +59,11 @@
                     Topped with Chunky Chicken, Capsicum &amp; Onions.
                 </p>
                 <h4 class="pizzaPrice">Price::400 RS(10% off on MRP)</h4>
-                <button type="submit" class="pizzaButton">ADD TO CART</button>
+                <button onclick="toggleCart(this, 'block')" class="pizzaButton">ADD TO CART</button>
             </li>
             <li class="clearList"></li>
         </ul>
-        <div>
+        <div class="cartWrapper" id="cartWrapper">
             <ul class="cart">
                 <li>
                     <h3 class= "name floatLeft">Name</h3>
@@ -79,14 +79,22 @@
                 </li>
                 <li class="clearList"></li>
             </ul>
-        </div>
-        <div class="discount">
-            <div>
-                <input class="discountWrap" type="text" value="Enter code">
-                <button class="discountButton cursorPointer" type="submit">APPLY COUPON</button>
-                <span class="total">TOTAL => 360 RS</span>
+            <div class="discount">
+                <div>
+                    <input class="discountWrap" type="text" value="Enter code">
+                    <button class="discountButton cursorPointer" type="submit">APPLY COUPON</button>
+                    <span class="total">TOTAL => 360 RS</span>
+                </div>
+                <button id="orderFinal" class="orderFinal cursorPointer" type="button">PLACE YOUR ORDER</button>
+                <button onclick="toggleCart(this, 'none')" class="orderFinal cursorPointer" type="button">Close Cart</button>
             </div>
-            <button class="orderFinal cursorPointer" type="button">PLACE YOUR ORDER</button>
-        </div>
+      </div>
+      <script>
+          const cartWrapper = document.getElementById("cartWrapper");
+          const toggleCart = (elem, value) => cartWrapper.style.display = value;
+          const orderFinal = document.getElementById('orderFinal');
+         // orderFinal.addEventListener('click', function() {
+         //  })
+      </script>
     </body>
 </html>

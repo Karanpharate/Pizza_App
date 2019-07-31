@@ -1,0 +1,113 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.floatLeft {
+	float: left;
+}
+.cursorPointer {
+	cursor: pointer;
+}
+
+.cart {
+	background-color: #ffffff;
+	font-size: 60px;
+	font-family: sans-serif;
+	color: #333333;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+.cart li {
+	border: 1px solid #ddd;
+}
+.cart h3 {
+	margin: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+.name {
+	width: 70%;
+}
+
+.action {
+	width: 15%;
+}
+
+.price {
+	width: 15%;
+}
+
+.cart li.clearlist ,.cart h3.clearList ,.cart h4.clearList {
+	clear: both;
+	float: none;
+}
+
+.topping {
+	padding: 20px 15px;
+	font-size: 50px;
+	font-family: sans-serif;
+	color: #3c763d;
+	background-color: #dff0d8;
+}
+
+.toppingName {
+	margin: 5px 0;
+}
+
+.toppingPrice {
+	margin-top: 5px;
+}
+
+.button {
+	font-size: 35px;
+	background-color: #b92c28;
+	padding: 12px 12px;
+	border-radius: 4px;
+	border: 0px;
+	color: #fff;
+}
+
+.discount {
+	background-color: #095c91;
+	padding: 100px 0;
+}
+
+.discountWrap {
+	background-color: #095c91;
+	padding: 5px 5px;
+	color: #fff;
+	border: 1px solid;
+	margin: 0 50px 0 100px;
+	font-size: 40px;
+}
+
+.discountButton {
+	color: #fff;
+	font-size: 40px;
+	background-color: #28a4c9;
+	border-radius: 4px;
+	border: 0px;
+	padding: 12px 12px;
+	margin-right: 50px;
+}
+
+.total {
+	color: #fff;
+	font-size: 30px;
+	font-family: sans-serif;
+	margin-right: 10%;
+}
+
+.orderFinal {
+	color: #e61a39;
+	display: block;
+	font-size: 50px;
+	padding: 12px 48px;
+	border-radius: 4px;
+	width: 620px;
+	margin: 100px auto 0;
+}
